@@ -20,6 +20,18 @@ var UserSchema = new Schema({
   googleId: {
     type: String,
     required: true
+  },
+  rating: {
+    type: Number
+    // limit number to between (for example) 1 and 5?  how does this work?
+  },
+  friend: {
+    type: Array,
+    default: []
+  },
+  card: {
+    type: Schema.Types.ObjectId,
+    ref: "Card"
   }
 });
 
