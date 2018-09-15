@@ -22,7 +22,7 @@ router.get('/google', passport.authenticate('google', {
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
     //final part of the authentication loop! how cool is passport.js?!
     // res.send(req.user);
-    res.redirect('exp://exp.host/@jerauld/react-auth');
+    res.redirect('exp://exp.host/@julienshim/react-auth');
 });
 
 module.exports = router;
